@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/title_with_back" />
+
+            <!--呼吸-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="呼吸（次/分钟）"
+                android:textColor="@color/green2"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/gray2"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <EditText
+                    android:id="@+id/et_breath_low"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="50dp"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:background="@drawable/view_round_bg_white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:text="~"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_breath_high"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:background="@drawable/view_round_bg_white" />
+
+                <ImageView
+                    android:id="@+id/iv_question_breath"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/iv_question" />
+
+            </LinearLayout>
+
+            <!--心率-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="心率（次/分钟）"
+                android:textColor="@color/green2"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/gray2"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <EditText
+                    android:id="@+id/et_heart_rate_low"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="50dp"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:background="@drawable/view_round_bg_white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:text="~"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_heart_rate_high"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:background="@drawable/view_round_bg_white" />
+
+                <ImageView
+                    android:id="@+id/iv_question_heart_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/iv_question" />
+
+            </LinearLayout>
+
+            <!--翻身次数-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="翻身次数（次/每晚）"
+                android:textColor="@color/green2"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/gray2"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <EditText
+                    android:id="@+id/et_range_low"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="50dp"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:background="@drawable/view_round_bg_white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:text="~"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_range_high"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:background="@drawable/view_round_bg_white" />
+
+                <ImageView
+                    android:id="@+id/iv_question_range"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/iv_question" />
+
+            </LinearLayout>
+
+            <!--鼻鼾-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="鼻鼾（次/分钟）"
+                android:textColor="@color/green2"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/gray2"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <EditText
+                    android:id="@+id/et_bihan_low"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="50dp"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:background="@drawable/view_round_bg_white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:text="~"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_bihan_high"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:background="@drawable/view_round_bg_white" />
+
+                <ImageView
+                    android:id="@+id/iv_question_bihan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/iv_question" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/view_round_bg_orange"
+                android:text="保存设置" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

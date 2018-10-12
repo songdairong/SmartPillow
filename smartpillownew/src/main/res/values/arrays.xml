@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="abnormal_items">
+        <item>全部信息</item>
+        <item>呼吸异常</item>
+        <item>心率异常</item>
+        <item>翻身次数异常</item>
+    </string-array>
+</resources>

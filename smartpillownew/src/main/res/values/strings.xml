@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">智慧睡眠</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string name="breath_suggest">睡眠情况下呼吸频率的正常区间为10至25，当平均呼吸频率低于10时显示为偏低，当平均呼吸频率高于25时显示为偏高。</string>
+    <string name="heart_rate_suggest">睡眠情况下心率的正常区间为40至100，当平均心率低于40时显示为偏低，当平均心率高于100时显示为偏高。</string>
+    <string name="range_suggest">睡眠情况下翻身次数的正常区间为20至26，当平均翻身次数低于20时显示为偏低，当平均翻身次数高于26时显示为偏高。</string>
+    <string name="bihan_suggest">打鼻鼾是目前较为普遍的睡眠障碍疾病，一般大众并不将其定性为疾病。其实打鼻鼾在医学上已被定义为鼾症或是睡眠呼吸暂停综合征。长期的鼻鼾会使睡眠过程中呼吸出现反复暂停，造成大脑、血液氧气含量不足，形成低血氧症，诱发高血压、心脏病、心律失常、心肌梗死、心绞痛等。</string>
+    <string name="help_hint1">根据监测睡眠状况为你提供最全面、准确的睡眠分析，以及历史睡眠数据对比，帮助你调整睡眠习惯。</string>
+
+    <string name="week_data">com.example.a450j.week.data</string>
+    <string name="realtime_data">com.example.a450j.realtime.data</string>
+    <string name="monitor_intent">com.example.a450j.monitor.intent</string>
+
+    <string name="sleep_analysis">睡眠报告有一周内每日睡眠的睡眠时间分布，如深度睡眠、浅度睡眠和清醒的时间，帮助用户全面认识自身的睡眠情况</string>
+    <string name="sleep_report">体征数据有呼吸、心率、翻身次数等，记录每日睡眠时身体详细数据</string>
+
+    <string name="digits">0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+
+</resources>

@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--呼吸-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:background="@drawable/item_round_shape_white"
+                android:layout_margin="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/iv_breath"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="30dp"/>
+
+                <ImageView
+                    android:id="@+id/iv_breath_bg"
+                    android:src="@drawable/bg_sleep_report_no_data2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="当前指标（呼吸次数）："
+                            android:textSize="16sp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/green2"/>
+
+                        <TextView
+                            android:id="@+id/tv_current_point_breath"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="0次/分钟"
+                            android:textSize="16sp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/green2"/>
+
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="是否有人："
+                        android:textSize="16sp"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/green2"/>
+
+                    <TextView
+                        android:id="@+id/tv_have_men_breath"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="有人"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/green2"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="是否正常："
+                        android:textSize="16sp"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/green2"/>
+
+                    <TextView
+                        android:id="@+id/tv_is_normal_breath"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="正常"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/green2"/>
+
+                </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:background="@color/transparent"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="指标范围："
+                        android:textSize="16sp"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/tv_point_range_breath"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="0——0"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="监测时间："
+                        android:textSize="16sp"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/tv_time_breath"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="2018-07-30 12:35:16"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"/>
+
+                </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <!--心跳-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:background="@drawable/item_round_shape_white"
+                android:layout_margin="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/iv_heart_rate"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="30dp"/>
+
+                <ImageView
+                    android:id="@+id/iv_heart_rate_bg"
+                    android:src="@drawable/sleep_info_top_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="当前指标（心率数值）："
+                            android:textSize="16sp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/green2"/>
+
+                        <TextView
+                            android:id="@+id/tv_current_point_heart_rate"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="0次/分钟"
+                            android:textSize="16sp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/green2"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="是否有人："
+                            android:textSize="16sp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/green2"/>
+
+                        <TextView
+                            android:id="@+id/tv_have_men_heart_rate"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:text="有人"
+                            android:textSize="16sp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/green2"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="是否正常："
+                            android:textSize="16sp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/green2"/>
+
+                        <TextView
+                            android:id="@+id/tv_is_normal_heart_rate"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:text="正常"
+                            android:textSize="16sp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/green2"/>
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:background="@color/transparent"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="指标范围："
+                            android:textSize="16sp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"/>
+
+                        <TextView
+                            android:id="@+id/tv_point_range_heart_rate"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:text="0——0"
+                            android:textSize="16sp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="监测时间："
+                            android:textSize="16sp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"/>
+
+                        <TextView
+                            android:id="@+id/tv_time_heart_rate"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:text="2018-07-30 12:35:16"
+                            android:textSize="16sp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+            <!--翻身次数-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:background="@drawable/item_round_shape_white"
+                android:layout_margin="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/iv_range"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="30dp"/>
+
+                <ImageView
+                    android:id="@+id/iv_range_bg"
+                    android:src="@drawable/sleep_info_top_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="当前指标（翻身次数）："
+                            android:textSize="16sp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/green2"/>
+
+                        <TextView
+                            android:id="@+id/tv_current_point_bihan"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="0次/分钟"
+                            android:textSize="16sp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/green2"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="是否有人："
+                            android:textSize="16sp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/green2"/>
+
+                        <TextView
+                            android:id="@+id/tv_have_men_bihan"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:text="有人"
+                            android:textSize="16sp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/green2"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="是否正常："
+                            android:textSize="16sp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/green2"/>
+
+                        <TextView
+                            android:id="@+id/tv_is_normal_bihan"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:text="正常"
+                            android:textSize="16sp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/green2"/>
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:background="@color/transparent"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="指标范围："
+                            android:textSize="16sp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"/>
+
+                        <TextView
+                            android:id="@+id/tv_point_range_bihan"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:text="0——0"
+                            android:textSize="16sp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="监测时间："
+                            android:textSize="16sp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"/>
+
+                        <TextView
+                            android:id="@+id/tv_time_bihan"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:text="2018-07-30 12:35:16"
+                            android:textSize="16sp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

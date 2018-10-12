@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/title_with_back"/>
+
+            <TextView
+                android:text="血压"
+                android:textSize="23sp"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:background="@drawable/view_round_bg_white"
+                android:layout_margin="5dp">
+
+                <!--高压-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="高压（mmHg）："
+                        android:textSize="18sp"
+                        android:layout_marginLeft="20dp" />
+
+                    <TextView
+                        android:id="@+id/tv_pressure_high"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="暂无数据"/>
+
+                </LinearLayout>
+
+                <!--低压-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="低压（mmHg）："
+                        android:textSize="18sp"
+                        android:layout_marginLeft="20dp" />
+
+                    <TextView
+                        android:id="@+id/tv_pressure_low"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="暂无数据"/>
+
+                </LinearLayout>
+
+                <!--脉搏-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="脉搏（bpm）："
+                        android:textSize="18sp"
+                        android:layout_marginLeft="20dp" />
+
+                    <TextView
+                        android:id="@+id/tv_pulse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="暂无数据"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:text="单道心电"
+                android:textSize="23sp"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:background="@drawable/view_round_bg_white"
+                android:layout_margin="5dp">
+
+                <!--平均心率-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="平均心率（bpm）："
+                        android:textSize="18sp"
+                        android:layout_marginLeft="20dp" />
+
+                    <TextView
+                        android:id="@+id/tv_heart_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="暂无数据"/>
+
+                </LinearLayout>
+
+                <!--低压-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="室性心搏（次）："
+                        android:textSize="18sp"
+                        android:layout_marginLeft="20dp" />
+
+                    <TextView
+                        android:id="@+id/tv_shixin_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="暂无数据"/>
+
+                </LinearLayout>
+
+                <!--脉搏-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="室上心博（次）："
+                        android:textSize="18sp"
+                        android:layout_marginLeft="20dp" />
+
+                    <TextView
+                        android:id="@+id/tv_shishang_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="暂无数据"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:text="12导心电"
+                android:textSize="23sp"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:background="@drawable/view_round_bg_white"
+                android:layout_margin="5dp">
+
+                <!--平均心率-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="平均心率（bpm）："
+                        android:textSize="18sp"
+                        android:layout_marginLeft="20dp" />
+
+                    <TextView
+                        android:id="@+id/tv_heart_rate_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="暂无数据"/>
+
+                </LinearLayout>
+
+                <!--低压-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="室性心搏（次）："
+                        android:textSize="18sp"
+                        android:layout_marginLeft="20dp" />
+
+                    <TextView
+                        android:id="@+id/tv_shixin_rate_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="暂无数据"/>
+
+                </LinearLayout>
+
+                <!--脉搏-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="室上心博（次）："
+                        android:textSize="18sp"
+                        android:layout_marginLeft="20dp" />
+
+                    <TextView
+                        android:id="@+id/tv_shishang_rate_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="暂无数据"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fa_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="20dp"
+                app:elevation="2dp"
+                android:src="@drawable/iv_add"
+                app:backgroundTint="@color/zxing_custom_possible_result_points"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

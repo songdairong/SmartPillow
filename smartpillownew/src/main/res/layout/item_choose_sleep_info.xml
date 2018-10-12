@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tv_breath"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="呼吸"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_margin="10dp"/>
+
+    <include layout="@layout/view_vertical_line"/>
+
+    <TextView
+        android:id="@+id/tv_rate"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="心率"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_margin="10dp"/>
+
+    <include layout="@layout/view_vertical_line"/>
+
+    <TextView
+        android:id="@+id/tv_range"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="翻身次数"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_margin="10dp"/>
+
+</LinearLayout>

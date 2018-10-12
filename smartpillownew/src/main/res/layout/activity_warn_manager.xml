@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray1">
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_switch_button"-->
+    <!--android:layout_width="60dp"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:src="@drawable/btn_light_switch_normal"/>-->
+
+    <include layout="@layout/title_with_back"/>
+
+    <!--呼吸报警-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="呼吸报警"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/iv_switch_breath"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/btn_light_switch_normal"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+    <!--心率报警-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="心率报警"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/iv_switch_heart_rate"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/btn_light_switch_normal"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+    <!--翻身次数报警-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="翻身次数报警"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/iv_switch_range"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/btn_light_switch_normal"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+    <!--鼻鼾报警-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="鼻鼾报警"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/iv_switch_bihan"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/btn_light_switch_normal"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:text="确认保存"
+        android:layout_margin="15dp"
+        android:background="@drawable/view_round_bg_orange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"/>
+
+</LinearLayout>

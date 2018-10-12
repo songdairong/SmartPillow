@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.smartpillownew">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/iv_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/iv_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".activity.WeekReportActivity" />
+        <activity android:name=".activity.IrregularReportActivity" />
+        <activity android:name=".activity.RangeSetActivity" />
+        <activity android:name=".activity.MonitorActivity" />
+        <activity android:name=".activity.WarnManagerActivity" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.BiologicDetectActivity" />
+
+        <service android:name=".service.HTTPService" />
+
+        <activity android:name=".activity.WarnUserActivity" />
+        <activity android:name=".activity.SleepDetailInfoActivity" />
+        <activity android:name=".activity.SleepHeartDetailInfoActivity" />
+
+        <receiver android:name=".utils.NotificationReceiver" />
+
+        <activity android:name=".activity.HistoryActivity" />
+        <activity android:name=".activity.HelpActivity" />
+        <activity android:name=".activity.AccountInfoActivity" />
+        <activity android:name=".activity.EquipmentActivity" />
+        <activity android:name=".activity.ReconmmendActivity" />
+        <activity
+            android:name=".activity.AbnormalInfoDetailActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".activity.WeekSleepActivity" />
+        <activity android:name=".activity.SleepRecordActivity" />
+        <activity android:name=".activity.SleepAnalysisActivity" />
+        <activity android:name=".activity.WeekReportActivityNew" />
+        <activity android:name=".activity.WeekReportRateActivityNew" />
+        <activity android:name=".activity.WeekReportRangeActivityNew" />
+        <activity android:name=".activity.DynamicPasswordActivity" />
+        <activity android:name=".activity.AbnormalInfoLineChartActivity"
+            android:screenOrientation="landscape"/>
+    </application>
+
+</manifest>

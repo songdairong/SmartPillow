@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/real_time_pressure"
+        android:icon="@mipmap/ic_launcher"
+        android:title="实时血压"/>
+
+    <item android:id="@+id/dandao_xindian"
+        android:icon="@mipmap/ic_launcher"
+        android:title="单道心电"/>
+
+    <item android:id="@+id/dao12_xindian"
+        android:icon="@mipmap/ic_launcher"
+        android:title="12导心电"/>
+
+</menu>

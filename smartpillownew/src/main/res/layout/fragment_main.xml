@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="180dp">
+
+            </com.youth.banner.Banner>
+
+            <include layout="@layout/view_vertical_line"/>
+
+            <TextView
+                android:id="@+id/tv_main_welcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textSize="18sp"
+                android:textColor="@color/gray3"/>
+
+            <include layout="@layout/view_vertical_line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--第一行-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp">
+
+                    <Button
+                        android:id="@+id/btn_meizhou_jilu"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:textColor="@color/gray3"
+                        android:drawableTop="@drawable/iv_meizhoujilu"
+                        android:text="每周睡眠"/>
+
+                    <include layout="@layout/view_horizental_line"/>
+
+                    <Button
+                        android:id="@+id/btn_yichang_jilu"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:textColor="@color/gray3"
+                        android:drawableTop="@drawable/iv_yichangjilu"
+                        android:text="异常记录"/>
+
+                    <include layout="@layout/view_horizental_line"/>
+
+                    <Button
+                        android:id="@+id/btn_jiankang_jianyi"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:drawableTop="@drawable/iv_advertise"
+                        android:text="历史记录"
+                        android:textColor="@color/gray3"/>
+
+                </LinearLayout>
+
+                <include layout="@layout/view_vertical_line"/>
+
+                <!--第二行-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp">
+
+                    <Button
+                        android:id="@+id/btn_baojing_renyuan"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableTop="@drawable/iv_baojingrenyuan"
+                        android:background="@color/transparent"
+                        android:text="报警人员设置"
+                        android:textColor="@color/gray3"/>
+
+                    <include layout="@layout/view_horizental_line"/>
+
+                    <Button
+                        android:id="@+id/btn_baojingshezhi"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:textColor="@color/gray3"
+                        android:drawableTop="@drawable/iv_baojingshezhi"
+                        android:text="报警项目设置"/>
+
+                    <include layout="@layout/view_horizental_line"/>
+
+
+
+                    <Button
+                        android:id="@+id/btn_canshu_shezhi"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:textColor="@color/gray3"
+                        android:drawableTop="@drawable/iv_canshushezhi"
+                        android:text="参数设置"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/gray2"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="350dp">
+
+                <ImageView
+                    android:src="@drawable/sleep_info_top_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/tv_shuimian_baogao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="近期睡眠报告"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"/>
+
+                <TextView
+                    android:id="@+id/tv_shuimian_defen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="70"
+                    android:textSize="70sp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_below="@id/tv_shuimian_baogao"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"/>
+
+                <TextView
+                    android:id="@+id/tv_fenshu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="分"
+                    android:layout_toRightOf="@id/tv_shuimian_defen"
+                    android:layout_marginTop="130dp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginLeft="15dp"/>
+
+                <Button
+                    android:id="@+id/btn_shuimian_biaoqian"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:text="良好"
+                    android:background="@drawable/view_round_bg_black"
+                    android:textColor="@color/green2"
+                    android:textSize="10sp"
+                    android:layout_toRightOf="@id/tv_fenshu"
+                    android:layout_marginTop="130dp"
+                    android:layout_marginLeft="30dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/transparent"
+                    android:layout_margin="20dp"
+                    android:padding="10dp"
+                    android:layout_alignParentBottom="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="睡眠报告"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:background="@color/transparent"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/help_hint1"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_theme_day"
+    tools:context="com.example.smartpillownew.activity.HelpActivity">
+
+    <include layout="@layout/title_with_back"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <TextView
+        android:layout_margin="10dp"
+        android:text="有问题请致电："
+        android:textSize="20sp"
+        android:textColor="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_call_phone"
+        android:layout_margin="10dp"
+        android:background="@drawable/view_round_bg_transparent"
+        android:text="17353239979"
+        android:textSize="20sp"
+        android:textColor="@color/green2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+
+    <TextView
+        android:layout_margin="10dp"
+        android:text="或发送邮件至："
+        android:textSize="20sp"
+        android:textColor="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_margin="10dp"
+        android:background="@drawable/view_round_bg_transparent"
+        android:text="635630438@qq.com"
+        android:textSize="20sp"
+        android:textColor="@color/green2"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray1"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_monitor_breath"
+                android:text="正在监测"
+                android:background="@drawable/view_round_bg_green"
+                android:padding="3dp"
+                android:textSize="11sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:visibility="invisible"/>
+
+            <!--呼吸-->
+            <LinearLayout
+                android:id="@+id/ll_breath"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/view_round_bg_transparent"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_marginBottom="15dp"
+                android:clickable="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <ImageView
+                        android:id="@+id/iv_breath"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/iv_breath" />
+
+                    <TextView
+                        android:id="@+id/tv_current_point_breath"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@id/iv_breath"
+                        android:textColor="@color/green2"
+                        android:textSize="25sp"
+                        android:text="00"
+                        android:padding="5dp"
+                        android:background="@drawable/view_round_bg_gray"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:text="（呼吸）次/分钟"
+                        android:textColor="@color/gray3"
+                        android:textSize="25sp" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/view_vertical_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+                    <com.example.smartpillownew.view.CardiographView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <com.example.smartpillownew.view.PathView2
+                        android:id="@+id/breath_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/tv_breath_no_data"
+                        android:text="没有数据"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"/>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_monitor_heart"
+                android:text="正在监测"
+                android:background="@drawable/view_round_bg_green"
+                android:padding="3dp"
+                android:textSize="11sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:visibility="invisible" />
+
+            <!--心率-->
+            <LinearLayout
+                android:id="@+id/ll_heart"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/view_round_bg_transparent"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_marginBottom="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <ImageView
+                        android:id="@+id/iv_heart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/iv_heart_rate" />
+
+                    <TextView
+                        android:id="@+id/tv_current_point_heart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@id/iv_heart"
+                        android:background="@drawable/view_round_bg_gray"
+                        android:text="00"
+                        android:padding="5dp"
+                        android:textColor="@color/green2"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:text="（心率）次/分钟"
+                        android:textColor="@color/gray3"
+                        android:textSize="25sp" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/view_vertical_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+                    <com.example.smartpillownew.view.CardiographView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <com.example.smartpillownew.view.PathView
+                        android:id="@+id/heart_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/tv_heart_no_data"
+                        android:text="没有数据"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"/>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
